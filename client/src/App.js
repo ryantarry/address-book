@@ -18,6 +18,8 @@ useEffect(() => {
   });
 }, []);
 
+
+
 const createCustomer = () => {
   Axios.post("http://localhost:3001/createCustomer", {
   companyName,
@@ -40,6 +42,7 @@ const createCustomer = () => {
     ]);
   });
 };
+
 
   return (
     <div className="App">

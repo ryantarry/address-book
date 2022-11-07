@@ -20,6 +20,7 @@ app.get("/getCustomers", (req, res) => {
 	});
 });
 
+
 app.post("/createCustomer", async (req, res) => {
 	const customer = req.body;
 	const newCustomer = new CustomerModel(customer);
@@ -27,6 +28,7 @@ app.post("/createCustomer", async (req, res) => {
 
 	res.json(customer);
 });
+
 
 
 app.listen(3001, () => {
